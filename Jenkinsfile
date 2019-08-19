@@ -1,9 +1,9 @@
-pipeline {
-  stages {
-    stage('HelloWorld') {
-      steps {
-        echo 'Hello World'
-      }
-    }
+node {
+  stage('HelloWorld') {
+    echo 'Hello World'
+  }
+
+  stage('git clone') {
+    git clone "ssh://git@mywebsite.com/myrepo.git"
   }
 }
