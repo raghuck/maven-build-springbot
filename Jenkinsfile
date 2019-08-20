@@ -10,9 +10,9 @@ pipeline {
             steps {
                 echo 'Sending email notification....'
                 mail body: 'project build successful for job named testpipeline-1',
-                from: 'raghu.kumar.ck@gmail.com',
+                from: 'test7@gmail.com',
                 subject: 'project build successful',
-                to: 'raghu.kumar.ck@gmail.com'
+                to: 'test7@gmail.com'
             }
         }
     }
